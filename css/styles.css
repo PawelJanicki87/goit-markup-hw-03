@@ -1,84 +1,35 @@
-body {
-  font-family: "Roboto", sans-serif, weight=700, sieze=18px, color #212121;
-}
-button {
-  cursor: pointer;
-  position: absolute;
-
-  font-family: "Roboto";
-  font-style: normal;
-
-  color: #ffffff;
-
-  background: #2196f3;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-}
-h1 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 900;
-  font-size: 44px;
-}
-h2 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 42px;
-  text-align: center;
-  letter-spacing: 0.03em;
-
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+    <! index>
+    body {
+  font-family: "Roboto", sans-serif,
   color: #212121;
 }
-h3 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
 
-  color: #212121;
-}
-h4 {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-
-  letter-spacing: 0.03em;
-
-  color: #212121;
-}
-p {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
-
-  /* or 171% */
-  letter-spacing: 0.03em;
-
-  color: #757575;
-}
-
-.social-links a {
-  text-decoration: none;
-  color: #212121;
-}
 
 .social-links .link:hover,
 .social-links .link:focus {
   color: #2196f3;
 }
-a {
+
+.social-links .link {
+  text-decoration: none;
+  color: #212121;
+}
+.link-logo {
   color: blue;
   text-decoration: none;
 }
+
 .blue-font {
   font-family: "Raleway";
   font-style: normal;
@@ -89,16 +40,6 @@ a {
   letter-spacing: 0.03em;
 
   color: #000000;
-}
-.social-links .contact {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
-
-  color: #757575;
 }
 .dark-font {
   font-family: "Raleway";
@@ -112,172 +53,108 @@ a {
 
   color: #2196f3;
 }
-address {
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
 
-  /* or 171% */
-  letter-spacing: 0.03em;
+.social-link .contact {
+ 
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
 }
-button:hover {
-  cursor: pointer;
+
+.index-button {
+
+  
+
+  font-weight: 700;
+  font-size: 16px;
+
   color: #ffffff;
+
   background: #2196f3;
 }
-.a {
-  position: absolute;
-  width: 77px;
-  height: 26px;
-  left: 532px;
-  top: 180px;
 
-  font-family: "Roboto";
-  font-style: normal;
+#title {
+  
+  
+  font-weight: 900;
+  font-size: 44px;
+}
+.index-title {
+  
+
+  font-weight: 700;
+  font-size: 14px;
+
+  color: #212121;
+}
+.post {
+  
+  font-size: 14px;
+
+  color: #757575;
+}
+
+.work {
+  
+
+  font-weight: 700;
+  font-size: 36px;
+  color: #212121;
+}
+.team {
+  
+
+  font-weight: 700;
+  font-size: 36px;
+  color: #212121;
+}
+.name {
+  
+
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-
   color: #212121;
-  position: absolute;
-  width: 121px;
-  height: 38px;
-  left: 510px;
-  top: 174px;
-
-  background: #f5f4fa;
-
-  /* shadow-middle */
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-  border-radius: 4px;
 }
-.b {
-  position: absolute;
-  width: 49px;
-  height: 26px;
-  left: 661px;
-  top: 180px;
+.profesion {
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
-
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  position: absolute;
-  width: 93px;
-  height: 38px;
-  left: 639px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
+  color: #757575;
 }
-.c {
-  position: absolute;
-  width: 70px;
-  height: 26px;
-  left: 762px;
-  top: 180px;
+.adress {
 
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
+  font-size: 14px;
+}
+
+.rest .mail {
+  
+  font-size: 14px;
+
+  text-decoration: none;
+}
+.rest .tel {
+  font-size: 14px;
+
+  text-decoration: none;
+}
+<! portfolio > body {
+  font-family: "Roboto", sans-serif,  color #212121;
+}
+.portfolio-button:hover {
+  color: #ffffff;
+
+  background: #2196f3;
+}
+
+.photo .title {
+ 
+  font-weight: 700;
+  font-size: 18px;
+  color: #212121;
+}
+.subtitle {
+  
   font-size: 16px;
-  line-height: 26px;
-
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-
-  position: absolute;
-  width: 114px;
-  height: 38px;
-  left: 740px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.d {
-  position: absolute;
-  width: 47px;
-  height: 26px;
-  left: 884px;
-  top: 180px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  position: absolute;
-  width: 91px;
-  height: 38px;
-  left: 862px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-.e {
-  position: absolute;
-  width: 77px;
-  height: 26px;
-  left: 983px;
-  top: 180px;
-
-  font-family: "Roboto";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-
-  /* identical to box height, or 162% */
-  text-align: center;
-  letter-spacing: 0.03em;
-
-  color: #212121;
-  border-radius: 4px;
-
-  position: absolute;
-  width: 121px;
-  height: 38px;
-  left: 961px;
-  top: 174px;
-
-  background: #f5f4fa;
-  border-radius: 4px;
-}
-
-.title {
-  font-family: "Roboto";
-  font-style: normal;
-  color: #212121;
-}
-p {
-  font-family: "Roboto";
-  font-style: normal;
 
   color: #757575;
 }
