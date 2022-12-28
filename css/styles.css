@@ -1,160 +1,164 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="/css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <style>
-    <! index>
-    body {
-  font-family: "Roboto", sans-serif,
-  color: #212121;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
+/*----Var----*/
+:root {
+  --font-family: "Roboto", sans-serif;
+  --primary-color: #212121;
+  --secondary-color: #2196f3; /*----nav-link .link----*/
+  --tirth-color: #ffffff; /*---index-button---*/
+  --forth-color: blue; /*--logo---*/
+  --letter-spacing: 0.03em; /*----logo----*/
+  --logo-font-family: "Raleway"; /*---logo---*/
+  --fifth-color: #000000; /*--logo---*/
+  --logo-font-style: normal; /*---logo--*/
+  --text-decoration: none; /*nav-linl-logo--*/
+  --cursor: pointer;
+  --sixth-color: #757575;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
 }
 
-
-.social-links .link:hover,
-.social-links .link:focus {
-  color: #2196f3;
+p,
+a,
+li,
+ul,
+h1,
+h2,
+h3,
+h4,
+img {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  max-width: 1200px;
+}
+body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
 }
 
-.social-links .link {
-  text-decoration: none;
-  color: #212121;
+.nav-link .link:hover,
+.nav-link .link:focus {
+  color: var(--secondary-color);
 }
-.link-logo {
-  color: blue;
-  text-decoration: none;
+
+.nav-link .link {
+  text-decoration: var(--text-decoration);
+  color: var(--first-color);
+}
+.logo {
+  color: var(--forth-color);
+  text-decoration: var(--text-decoration);
 }
 
 .blue-font {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: var(--logo-font-family);
+  font-style: var(--logo-font-style);
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
 
-  letter-spacing: 0.03em;
+  letter-spacing: var(--letter-spacing);
 
-  color: #000000;
+  color: var(--fifth-color);
 }
 .dark-font {
-  font-family: "Raleway";
-  font-style: normal;
+  font-family: var(--logo-font-family);
+  font-style: var(--logo-font-style);
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
 
   /* identical to box height */
-  letter-spacing: 0.03em;
+  letter-spacing: var(letter-spacing);
 
-  color: #2196f3;
+  color: (--secondary-color);
 }
 
-.social-link .contact {
- 
+.nav-link .contact {
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
   letter-spacing: 0.02em;
 }
 
-.index-button {
-
-  
-
+.index-button:hover {
+  cursor: var(--cursor);
   font-weight: 700;
   font-size: 16px;
-
-  color: #ffffff;
-
-  background: #2196f3;
+  color: var(--tirth-color);
+  background-color: var(--secondary-color);
 }
 
 #title {
-  
-  
   font-weight: 900;
   font-size: 44px;
 }
 .index-title {
-  
-
   font-weight: 700;
   font-size: 14px;
 
-  color: #212121;
+  color: var(--primary-color);
 }
 .post {
-  
   font-size: 14px;
 
-  color: #757575;
+  color: var(--sixth-color);
 }
 
 .work {
-  
-
   font-weight: 700;
   font-size: 36px;
-  color: #212121;
+  color: var(--primary-color);
 }
 .team {
-  
-
   font-weight: 700;
   font-size: 36px;
-  color: #212121;
+  color: var(--primary-color);
 }
 .name {
-  
-
   font-weight: 500;
   font-size: 16px;
-  color: #212121;
+  color: var(--primary-color);
 }
 .profesion {
-
   font-size: 16px;
-  color: #757575;
+  color: var(--sixth-color);
 }
-.adress {
-
+footer .adress {
   font-size: 14px;
 }
 
-.rest .mail {
-  
+.nav-link .mail {
   font-size: 14px;
 
-  text-decoration: none;
+  text-decoration: var(--text-decoration);
 }
-.rest .tel {
+.nav-link .tel {
   font-size: 14px;
 
-  text-decoration: none;
+  text-decoration: var(--text-decoration);
 }
-<! portfolio > body {
-  font-family: "Roboto", sans-serif,  color #212121;
-}
+/*----portfolio----*/
+
 .portfolio-button:hover {
-  color: #ffffff;
-
-  background: #2196f3;
+  cursor: var(--cursor);
+  color: var(--tirth-color);
+  background-color: var(--secondary-color);
 }
 
 .photo .title {
- 
   font-weight: 700;
   font-size: 18px;
-  color: #212121;
+  color: var(--primary-color);
 }
 .subtitle {
-  
   font-size: 16px;
 
-  color: #757575;
+  color: var(--sixth-color);
 }

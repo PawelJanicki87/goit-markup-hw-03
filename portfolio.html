@@ -5,49 +5,55 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap">
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style></style>
+  </head>
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
     </style>
   </head>
   <body>
+    <div class="page">
     <header>
-      <nav>
-        <ul class="social-links">
-          <li>
-            <a class="link-logo" href="/WebStudio"
+      <div class="container-header">
+        <nav>
+        
+          <ul>
+            <a class="logo" href="/WebStudio"
               ><span class="dark-font">Web</span><span class="blue-font">Studio</span></a
             >
-          </li>
-          <li><a class="link" href="index.html">Agencja</a></li>
-          <li><a class="link" href="./portfolio.html">Portfolio</a></li>
-          <li><a class="link" href="/kontakt">Kontakt</a></li>
+          </ul>
+          <ul class="nav-link">
+            <li class="iteam"><a class="link" href="index.html">Agencja</a></li>
+            <li class="iteam"><a class="link" href="./portfolio.html">Portfolio</a></li>
+            <li class="iteam"><a class="link" href="/kontakt">Kontakt</a></li>
+          </ul>
+        </nav>
+        <ul class="nav-link contact">
+          <li class="iteam"><a class="link" href="/mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="iteam"><a class="link" href="/tel:+48111111111">+48 111 111 111</a></li>
         </ul>
-      </nav>
-      <ul class="social-links contact">
-        <li><a class="link" href="/mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li><a class="link" href="/tel:+48111111111">+48 111 111 111</a></li>
-      </ul>
+      </div>
+      </div>
     </header>
     <main>
+      <div class="container-portfolio">
       <section>
-        <ul class="porfolio button">
-          <button>Wszystkie</button>
-          <button>Strony</button>
-          <button>Aplikacje</button>
-          <button>Dizajn</button>
-          <button>Marketing</button>
+        <ul>
+          <button class="portfolio-button">Wszystkie</button>
+          <button class="portfolio-button">Strony</button>
+          <button class="portfolio-button">Aplikacje</button>
+          <button class="portfolio-button">Dizajn</button>
+          <button class="portfolio-button">Marketing</button>
         </ul>
       </section>
       <element class="photo">
-        <figure>
+        <figure class="card">
           <img src="./images/imgp1.jpg" alt="przyklad strony internetowej" width: 370px; height:
           294px />
           <figcaption>
@@ -57,7 +63,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp2.jpg" alt="przyklad strony graficznej" width: 370px; height: 294px
           />
           <figcaption>
@@ -67,7 +73,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp3.jpg" alt="logo firmy" width: 370px; height: 294px />
           <figcaption>
             <h3 class="title">
@@ -76,7 +82,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp4.jpg" alt="czarne sluchawki" width: 370px; height: 294px />
           <figcaption>
             <h3 class="title">
@@ -85,7 +91,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp5.jpg" alt="dwa pudelka" width: 370px; height: 294px />
           <figcaption>
             <h3 class="title">
@@ -94,7 +100,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp6.jpg" alt="monitor wyswietlajacy strone internetowa" width: 370px;
           height: 294px />
           <figcaption>
@@ -104,7 +110,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp7.jpg" alt="czasopismo" width: 370px; height: 294px />
           <figcaption>
             <h3 class="title">
@@ -113,7 +119,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp8.jpg" alt="firmowy bryloczek" width: 370px; height: 294px />
           <figcaption>
             <h3 class="title">
@@ -122,7 +128,7 @@
             </h3>
           </figcaption>
         </figure>
-        <figure>
+        <figure class="card">
           <img src="./images/imgp9.jpg" alt="laptop" width: 370px; height: 294px />
           <figcaption>
             <h3 class="title">
@@ -132,26 +138,25 @@
           </figcaption>
         </figure>
       </element>
+      </div>
     </main>
     <footer>
-      <address class="rest">
+      <address class="footer">
         <ul>
-          <a class="link-logo" href="/WebStudio"
-            ><span class="dark-font">Web</span><span class="blue-font">Studio</span></a
-          >
+          <a class="logo" href="/WebStudio"
+            ><span class="dark-font">Web</span><span class="blue-font">Studio</span></a>
           <address>
             <ul class="adress">
               m. Warszawa, Aleje Jerozolimskie 21
             </ul>
           </address>
-          <ul>
-            <a class="mail" href="mailto:info@exaple.com">info@example.com</a>
-          </ul>
-          <ul>
-            <a class="tel" href="tel:+48111111111">+48 111 111 111</a>
-          </ul>
+          <ul class="nav-link contact">
+            <li class="mail"><a class="link" href="mailto:info@exaple.com">info@example.com</a></li>
+            <li class="tel"><a class="link" href="tel:+48111111111">+48 111 111 111</a></li>
+         </ul>
         </ul>
       </address>
     </footer>
+  </div>
   </body>
 </html>
