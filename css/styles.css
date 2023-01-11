@@ -62,8 +62,6 @@ body {
 
 .header {
   border-bottom: var(--border);
-  height: 80px;
-  width: 1600px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.143;
@@ -180,7 +178,7 @@ body {
 /*--------------------------------slider----------------*/
 .slider {
   display: block;
-  width: 1600px;
+  margin: auto;
   background-color: var(--slider-color);
   color: var(--tirth-color);
 }
@@ -189,7 +187,6 @@ body {
   display: flex;
   flex-direction: column;
   width: 1200px;
-  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   padding-left: 15px;
@@ -234,11 +231,10 @@ body {
 /*----------------------------------------------content------*/
 .down_page {
   padding-top: 94px;
-  width: 1600px;
 }
 
-.down_page .container {
-  width: 1200px;
+.down_page_container {
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -247,11 +243,6 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-
-.all_item {
-  width: 270px;
-  height: 101px;
 }
 
 .index_title {
@@ -274,12 +265,11 @@ body {
 
 .about_us {
   display: block;
-  width: 1600px;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.about_us .container {
+.about_us_container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -307,13 +297,11 @@ body {
 .team {
   padding-top: 94px;
   padding-bottom: 94px;
-  height: 648px;
-  width: 1600px;
   display: block;
   background-color: var(--background-color-team);
 }
 
-.team .container {
+.team_container {
   width: 1200px;
   margin: 0 auto;
   padding: 0 15px;
@@ -330,8 +318,6 @@ body {
 .team_photo {
   display: flex;
   flex-direction: column;
-  width: 270px;
-  height: 368px;
   background: var(--tirth-color);
   box-shadow: var(--box-shadow-pics);
   border-radius: var(--border-radius-pics);
@@ -350,8 +336,6 @@ body {
 .wraper {
   box-sizing: border-box;
   display: block;
-  width: 270px;
-  height: 368px;
 }
 
 .name {
@@ -383,8 +367,6 @@ body {
 
 .footer {
   display: block;
-  width: 1600px;
-  margin: 0;
   padding: 60px 0;
   font-size: 14px;
   line-height: 1.714;
@@ -397,14 +379,12 @@ body {
   flex-direction: column;
   align-items: flex-start;
   max-width: 1200px;
-  height: 141px;
   margin: 0 auto;
   padding: 0 15px;
   line-height: 24px;
 }
 
 .logo_footer {
-  box-sizing: border-box;
   display: block;
   text-decoration: none;
   font-weight: 700;
