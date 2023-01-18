@@ -177,6 +177,7 @@ body {
 /*---main----*/
 /*--------------------------------slider----------------*/
 .slider {
+  max-width: 1600px;
   display: block;
   margin: auto;
   background-color: var(--slider-color);
