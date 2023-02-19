@@ -1,19 +1,25 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap");
 /*----Var----*/
 :root {
+  /*--body--*/
   --font-family: "Roboto", sans-serif;
   --primary-color: #212121;
+  /*--font family for logo--*/
+
+  --logo-font-family: "Raleway"; /*---logo---*/
+
   --secondary-color: #2196f3; /*----nav-link .link----*/
   --tirth-color: #ffffff; /*---index-button---*/
   --forth-color: blue; /*--logo---*/
   --letter-spacing: 0.03em; /*----logo----*/
-  --logo-font-family: "Raleway"; /*---logo---*/
+
   --fifth-color: #000000; /*--logo---*/
   --logo-font-style: normal; /*---logo--*/
-  --text-decoration: none; /*--nav-linl-logo--*/
+
   --cursor: pointer;
   --sixth-color: #757575;
-  --border: 1px solid #ececec; /*--heder--*/
+  /*---border----*/
+  --border-header: 1px solid #ececec; /*--heder--*/
   --slider-color: #2f303a;
   --box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); /*solution_button*/
   --box-shadow-pics: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
@@ -38,15 +44,6 @@ p {
   padding: 0px;
 }
 
-img {
-  display: block;
-}
-
-li {
-  list-style: none;
-  text-decoration: none;
-}
-
 body {
   font-family: var(--font-family);
   color: var(--primary-color);
@@ -55,6 +52,7 @@ body {
 .container {
   width: 1200px;
   margin: 0 auto;
+  padding: 0 15px;
   align-items: center;
 }
 
@@ -62,10 +60,6 @@ body {
 
 .header {
   border-bottom: var(--border);
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.143;
-  letter-spacing: 0.02em;
 }
 
 .header .container {
@@ -77,100 +71,106 @@ body {
   padding-bottom: 25px;
 }
 
-.navigation {
+.nav {
   display: flex;
 }
 
 .logo {
-  color: var(--secondary-color);
-  text-decoration: var(--text-decoration);
-}
-
-.blue-font {
+  font-family: "Raleway";
+  font-style: normal;
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
-  letter-spacing: var(--letter-spacing);
-  color: var(--fifth-color);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.dark-font {
-  font-family: var(--logo-font-family);
-  font-style: var(--logo-font-style);
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 31px;
-  letter-spacing: var(--letter-spacing);
-  color: var(--secondary-color);
+.logo-font-accent {
+  color: #2196f3;
+}
+
+.logo-font-second {
+  color: #000000;
 }
 
 .nav_list {
   display: flex;
+
   align-items: center;
+  list-style: none;
   margin-left: 94px;
   gap: 46px;
 }
 
-.nav_item_list {
+.nav_item {
   display: flex;
-  list-style: none;
   text-decoration: none;
-}
 
-.nav_item_list_agencja {
-  display: list-item;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+}
+.nav_link {
   text-decoration: none;
   color: var(--primary-color);
 }
+.nav_link_agencja,
+.nav_link_portfolio {
+  color: var(--secondary-color);
+  text-decoration: none;
+}
 
-.nav_item_list_portfolio {
+.nav_link_portfolio {
+  text-decoration: none;
+}
+
+.nav_link_kontact {
   display: list-item;
   text-decoration: none;
   color: var(--fifth-color);
 }
 
-.nav_item_list_contact {
-  display: list-item;
-  text-decoration: none;
-  color: var(--fifth-color);
-}
-
-.nav_item_list_agencja:hover,
-.nav_item_list_portfolio:hover,
-.nav_item_list_contact:hover,
-.secound_item_mail:hover,
-.secound_item_tel:hover,
-.nav_item_list_agencja:focus,
-.nav_item_list_portfolio:focus,
-.nav_item_list_contact:focus,
-.secound_item_mail:focus,
-.secound_item_tel:focus {
+.nav_link_agencja:hover,
+.nav_link_portfolio:hover,
+.nav_link_kontact:hover,
+.contact_item_mail:hover,
+.contact_item_tel:hover,
+.nav_link_agencja:focus,
+.nav_link_portfolio:focus,
+.nav_link_kontact:focus,
+.contact_item_mail:focus,
+.contact_item_tel:focus {
   color: var(--secondary-color);
 }
 
 /*------------------------------header contact menu------------------*/
 
-.contact_item {
+.contact_list {
   display: flex;
   list-style: none;
   margin-left: auto;
 }
 
-.secound_item {
-  display: list-item;
+.contact_item {
+  display: flex;
   list-style: none;
 }
 
-.secound_item_mail {
-  display: inline;
+.contact_item_mail,
+.contact_item_tel {
   text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  text-align: center;
   color: var(--sixth-color);
 }
 
-.secound_item_tel {
-  display: inline;
-  text-decoration: none;
-  color: var(--sixth-color);
+.contact_item_tel {
   margin-left: 50px;
 }
 
@@ -289,6 +289,7 @@ body {
 .about_us_photo_list {
   display: flex;
   justify-content: space-between;
+  list-style: none;
 }
 .photo {
   display: block;
@@ -367,7 +368,6 @@ body {
 /*----------------------------------------footer-----*/
 
 .footer {
-  display: block;
   padding: 60px 0;
   font-size: 14px;
   line-height: 1.714;
@@ -375,7 +375,7 @@ body {
   background-color: var(--slider-color);
 }
 
-.footer .container {
+.footer_container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -388,6 +388,9 @@ body {
 .logo_footer {
   display: block;
   text-decoration: none;
+  font-family: var(--logo-font-family);
+  font-style: var(--logo-font-style);
+  letter-spacing: var(--letter-spacing);
   font-weight: 700;
   font-size: 26px;
   line-height: 31px;
@@ -395,51 +398,32 @@ body {
   margin-right: 94px;
 }
 
-.web-text {
-  font-family: var(--logo-font-family);
-  font-style: var(--logo-font-style);
-  letter-spacing: var(--letter-spacing);
+.logo_footer_accent {
   color: var(--secondary-color);
 }
-.studio-text {
-  font-family: var(--logo-font-family);
-  font-style: var(--logo-font-style);
-  letter-spacing: var(--letter-spacing);
+.logo_footer_secondary {
   color: var(--tirth-color);
 }
-
-.contact_list {
-  display: block;
+.footer_address {
+  font-style: normal;
 }
-
-.nav_footer {
-  display: block;
-}
-
-.footer_item {
-  display: list-item;
-}
-
 .footer_item:nth-last-child(2) {
   margin: 9px 0;
 }
 
 .adress {
-  display: inline;
   color: var(--tirth-color);
   cursor: pointer;
   font-style: normal;
 }
 
 .mail {
-  display: inline;
   color: var(--color-mail);
   cursor: pointer;
   font-style: normal;
 }
 
 .tel {
-  display: inline;
   color: var(--color-mail);
   cursor: pointer;
   font-style: normal;
@@ -471,6 +455,7 @@ body {
 
 .button_list {
   display: flex;
+  list-style: none;
   margin-bottom: 50px;
   gap: 8px;
 }
@@ -507,6 +492,7 @@ body {
 
 .card_item {
   display: flex;
+  list-style: none;
   justify-content: space-between;
   flex-wrap: wrap;
 }
